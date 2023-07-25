@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+  
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    body{
+      background-color: rgb(221, 190, 149);
+      font-family: Arial, sans-serif;
+      
+    }
+    .bgimg{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    h1{
+      text-align: center;
+      text-decoration: underline;
+      font-family: 'Bungee Spice', cursive;
+      font-size: 80px;
+    }
+    img{
+      width: 250px;
+      height: 250px;
+    }
+    .c2{
+      margin: 30px 650px;
+    }
+
+    .creator{
+      
+      height: 170px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: end;
+      padding: 20px 14px;
+      text-decoration: underline;
+    }
+  
+  .container {
+    margin: 20px auto;
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+    
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  button {
+    padding: 5px 10px;
+  }
+  
+  </style>
+</head>
+<body>
+  <h1>To-Do List</h1>
+  <div class="bgimg">
+   
+    <img src="bgimg.jpg" alt="" > 
+  </div>
+  <br><br><hr>
+  
+  <div class="c1">
+    <div class="container c2">
+      <div >
+        <input type="text" id="taskInput" placeholder="Task To Do">
+        <button onclick="addTask()">Add</button>
+      </div>
+      <ul id="taskList">
+      </ul>
+    </div>
+  </div>
+
+  <div class="creator">
+    <h3>By- Sanskriti Yadav</h3>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
